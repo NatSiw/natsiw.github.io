@@ -1,3 +1,228 @@
 body {
-  background-color: #dfecff;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(255 180 224), rgb(255 146 237));
+  background-size: cover;
+  font-family: Verdana, sans-serif;
+  margin: 0;
 }
+
+/*  AI - helped to fix the header positioning*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#logo-href{
+  margin: 1%;
+}
+.logo {
+  display: block;
+  max-height: 50px;
+}
+
+.header-li {
+  display: inline;
+}
+
+.header-a {
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+  -webkit-text-stroke: 1px black;
+  margin: 20px;
+}
+
+/*  AI - helped with hover effect */
+.header-a:hover {
+  color: #ff00a6;
+}
+
+
+#introduction {
+  border-bottom: rgb(53 255 248) dotted 5px;
+  padding-bottom: 1%;
+  font-size: large;
+}
+
+#p-important{
+  font-weight: bold;
+  color: #ff00a6;
+}
+
+p{
+  line-height: 1.1;
+  letter-spacing: 1%;
+  color: #28002c;
+  font-size: medium;
+}
+h1 {
+  border-top: rgb(53 255 248) dotted 5px;
+  padding-top: 1%;
+  color: #ff00a6;
+  -webkit-text-stroke: 1px black;
+}
+
+h2 {
+  color: #a300ff;
+  -webkit-text-stroke: 1px black;
+}
+
+h3 {
+  clear: both;
+  color: #35fff8;
+  -webkit-text-stroke: 1px black;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  clear: both;
+}
+
+h1::before {
+  content: "\2726" "\0020";
+}
+
+h1::after {
+  content: "\0020" "\2726";
+}
+
+h2::before {
+  content: "\2665 " "\0020";
+}
+
+h2::after {
+  content: "\0020" "\2665 ";
+}
+
+h3::before {
+  content: "-";
+}
+
+h3::after {
+  content: "-";
+}
+
+.image {
+  float: left;
+  aspect-ratio: 3 / 4;
+  width: 10%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: #35fff8 solid 5px;
+}
+
+.image-tops {
+  background-image: url("assets/y2k1.jpg");
+}
+
+.image-bottoms {
+  background-image: url("assets/y2k3.jpg");
+  float: right;
+}
+
+.image-shoes {
+  background-image: url("assets/y2k2.jpg");
+}
+
+.image-style {
+  background-image: url("assets/y2k5.jpg");
+  float: right;
+}
+
+.image-colors {
+  background-image: url("assets/y2k4.jpg");
+}
+
+.image-jewelry {
+  background-image: url("assets/y2k6.jpg");
+  float: right;
+}
+
+.image-accessories {
+  background-image: url("assets/y2k7.jpg");
+}
+
+.what-to-do-next-items {
+  display: flex;
+}
+
+#p-confidence-quote{
+  font-style: italic;
+  font-size: large;
+}
+
+.what-to-do-next-item {
+  border: rgb(53 255 248) dotted 5px;
+  border-radius: 10%;
+  flex: 1;
+  margin: 1%;
+  padding: 1%;
+}
+
+ul {
+  list-style: none;
+}
+
+#summary li::before {
+  content: "\2606 " "\0020";
+}
+
+footer{
+  text-align: center;
+  margin: 1%;
+  border-top: rgb(53 255 248) dotted 5px;
+}
+
+footer p{
+  color: white;
+}
+
+@media screen and (max-width: 375px)
+{
+  header {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  header ul, #summary ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .header-li {
+    display: block;
+  }
+
+  .image {
+    width: 70%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .what-to-do-next-items {
+    display: block;
+  }
+
+
+
+}
+
+
