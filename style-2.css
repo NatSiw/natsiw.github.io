@@ -1,0 +1,157 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(204 179 171), rgb(255 255 255));
+  background-size: cover;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+h1, h2, h3{
+  color: #2b292a;
+  text-align: left;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 6vw;
+  margin-top: 5%;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+p{
+  line-height: 1.5;
+}
+#introduction{
+  letter-spacing: 30%;
+  line-height: 1.5;
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+}
+h2{
+  font-size: xxx-large;
+}
+h3{
+  font-size: xx-large;
+  border-bottom: #937269 solid 1px;
+}
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+p{
+  color: #2b292a;
+  font-size: large;
+  letter-spacing: 15%;
+}
+
+header {
+  background-color: #f8efeb;
+  position: static;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid #937269;
+  padding: 2%;
+}
+
+header a {
+  color: #2b292a;
+  font-size: large;
+  text-decoration: none;
+  margin: 5%;
+}
+
+header ul {
+  padding: 0;
+}
+
+header a:hover{
+  font-weight: bold;
+  color: #937269;
+}
+
+.logo{
+  max-height: 50px;
+  margin: 1%;
+}
+
+.header-li {
+  display: inline;
+}
+
+.image {
+  width: 60%;
+  aspect-ratio: 3 / 2;
+  margin: 2rem auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10%;
+}
+
+.image-tops {
+  background-image: url("assets/minimalism1.jpg");
+}
+
+.image-bottoms {
+  background-image: url("assets/minimalism2.jpg");
+}
+
+.image-shoes {
+  background-image: url("assets/minimalism3.jpg");
+}
+
+.image-style {
+  background-image: url("assets/minimalism4.jpg");
+}
+
+.image-colors {
+  background-image: url("assets/minimalism5.jpg");
+}
+
+.image-jewelry {
+  background-image: url("assets/minimalism7.jpg");
+}
+
+.image-accessories {
+  background-image: url("assets/minimalism6.jpg");
+}
+
+#summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+#summary li {
+  padding: 2%;
+  border-bottom: 1px solid #e6dcd8;
+}
+
+#summary li::before {
+  content: "\2014" "\0020";
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  padding: 2%;
+}
+footer p{
+  letter-spacing: 40%;
+  color: #937269;
+}
+
+
+@media screen and (max-width: 375px) {
+  h1, #introduction {
+    width: 100%;
+  }
+
+  .image {
+    width: 95%;
+  }
+}
