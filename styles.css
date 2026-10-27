@@ -1,3 +1,85 @@
 body {
   background-color: #f3fff3;
+  height: 100vh;
+}
+
+.tasks{
+  background-color: #ffd6f0;
+  min-width: 20%;
+  min-height: 20%;
+  max-width: 90%;
+  max-height: 90%;
+  border: 1px solid #ffb8e6;
+}
+
+.search-tasks-text {
+  width: 100%;
+  border: 0;
+}
+
+.add-task-text, .add-task-datetime{
+  margin-top: 1%;
+  border: 1px solid #ffb8e6;
+}
+
+.add-task-text:hover{
+  border: 1px solid #ffb8e6;
+  background-color: #ffb8e6;
+}
+
+.add-task-button{
+  margin-top: 1%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.add-task-button:hover{
+  background-color: #ffe3f5;
+  border: 1px solid #ffb8e6;
+}
+
+.search-tasks-text:hover{
+  background-color: #ffb8e6;
+}
+
+li{
+  list-style: none;
+
+}
+
+li::before{
+  color: white;
+  content: "♥ ";
+  margin-right: 1%;
+}
+
+li:hover::before{
+  color: #ffb8e6;
+}
+
+ul{
+  padding: 1%;
+  margin: 1%;
+}
+
+.task-li {
+  margin: 1%;
+  display: flex;
+
+}
+
+
+.task-li-del-button{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-left: 1%;
+}
+
+.task-li-del-button:hover{
+  background-color: #ffe3f5;
+  border: 1px solid #ffb8e6;
+}
+
+.task-li-date{
+  margin-left: 1%;
 }
