@@ -9,6 +9,32 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-
+<main class="container">
+    <div class="tasks">
+        <input class="search-tasks-text" type="search" placeholder="Wyszukaj zadanie...">
+        <ul class="task-ul">
+            <li class="task-li">
+                <div class="task-li-text"> Task nieaktualny ukryty 1 </div>
+                <div class="task-li-date"> 2026-01-01 09:00</div>
+                <button class="task-li-del-button"> Usuń</button>
+            </li>
+            <li class="task-li">
+                <div class="task-li-text"> Task nieaktualny ukryty 2</div>
+                <div class="task-li-date"> 2026-01-01 11:00</div>
+                <button class="task-li-del-button"> Usuń</button>
+            </li>
+            <li class="task-li">
+                <div class="task-li-text"> Task nieaktualny ukryty 3</div>
+                <div class="task-li-date"> 2026-01-01 15:00</div>
+                <button class="task-li-del-button"> Usuń</button>
+            </li>
+        </ul>
+    </div>
+    <div class="add-task">
+        <input type="text" class="add-task-text" minlength="3" maxlength="255">
+        <button class="add-task-button">Dodaj</button>
+        <input type="datetime-local" class="add-task-datetime">
+    </div>
+</main>
 </body>
 </html>
