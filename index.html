@@ -6,18 +6,49 @@
     <title>Natalia Siwienki (53781) - AI LAB C</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <link rel="stylesheet" href="leaflet-1.9.4/leaflet.css" />
+    <script src="leaflet-1.9.4/leaflet-src.js"></script>
+    <script src="leaflet-1.9.4/leaflet-providers.js"></script>
+    <script src="leaflet-1.9.4/leaflet-image.js"></script>
+
+
     <script src="scripts.js" defer></script>
 </head>
 <body>
-<main class="puzzle-container">
-    <div class="puzzle-box1">
+
+
+    <div id="puzzle-box1">
+        <div id="map"></div>
+        <button id = "myLocation" onclick="getLocation()"> Moja lokalizacja </button>
+        <button id = "getMap" onclick="getMap()"> Pobierz mapę </button>
+        <div id="positionInfo">
+            <strong>Latitude:</strong> <span id="latitude"></span><br>
+            <strong>Longitude:</strong> <span id="longitude"></span><br>
+        </div>
     </div>
-    <div class="puzzle-box2">
+
+    <canvas id="puzzle-box2"></canvas>
+
+    <div id="puzzle-box3">
     </div>
-    <div class="puzzle-box3">
+    <div id="puzzle-box4">
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
     </div>
-    <div class="puzzle-box4">
-    </div>
-</main>
 </body>
 </html>
