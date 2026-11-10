@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Natalia Siwienki (53781) - AI LAB D</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<header>
+    <h1> POGODA </h1>
+    <h2 id="city-name"></h2>
+</header>
+<main>
+        <div id = "search-container">
+            <input type="text" id="city-input" placeholder="Miasto">
+            <button onclick="getWeather()" id="search-button">Pogoda</button>
+        </div>
+                <div id="hour-div">Godzina: <span class="hour">?</span></div>
+        <div id="current-weather" class="card current-weather" style="display: none;">
+
+            <div>Temperatura: <span class="temperature-real">?</span>°C</div>
+            <div>Odczuwalna: <span class="temperature-perceived">?</span>°C</div>
+            <div>Niebo: <span class="sky">?</span></div>
+            <div>Opady: <span class="precipitation">?</span> mm</div>
+            <div>Wiatr: <span class="wind-speed">?</span> m/s</div>
+            <div>Wilgotność: <span class="humidity">?</span>%</div>
+            <div>Widoczność: <span class="visibility">?</span> km</div>
+        </div>
+
+    <div id="forecast" class="forecast"></div>
+
+
+</main>
+<footer>
+    <p> &copy; 2026 Natalia Siwienki.</p>
+</footer>
+</body>
+</html>

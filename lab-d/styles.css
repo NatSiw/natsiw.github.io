@@ -1,0 +1,117 @@
+body {
+  background-color: #000000;
+  background-size: cover;
+  height: 100%;
+  color: #ffffff;
+  letter-spacing: 20%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2{
+  font-family: "Agency FB", sans-serif;
+  font-size: 600%;
+  letter-spacing: 20%;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 20px #ff00a6,
+    0 0 25px #ff00a6,
+    0 0 30px #ff00a6,
+    0 0 35px #ff00a6;
+  margin: 1%;
+}
+
+h2{
+  font-size: 300%;
+  margin-bottom: 2%
+}
+
+footer{
+  font-family: "Brush Script MT", sans-serif;
+  font-size: large;
+  font-weight: lighter;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background-color: #ff00a6;
+  border: 2px solid #ffffff;
+  box-shadow:
+    0 0 2px #fff,
+    0 0 15px #fff;
+  border-radius: 5px 5px;
+  padding: 2%;
+  margin: 5%;
+  text-align: center;
+  letter-spacing: 30%;
+}
+
+#city-input, #search-button{
+  width: 50%;
+  border: 2px solid #ff00a6;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow:
+    0 0 2px #ff00a6,
+    0 0 15px #ff00a6,
+    0 0 20px #ffffff;
+}
+
+#search-button{
+  width: 30%;
+}
+
+.current-weather{
+  border-radius: 60px 5px;
+  width: 30%;
+  box-shadow:
+    0 0 20px #fff,
+    0 0 100px #fff;
+  margin: 3%;
+  font-size: x-large;
+
+}
+
+.forecast {
+  width: 20%;
+}
+
+#hour-div{
+  margin: 1%;
+  display: none;
+}
+
+
+@media (max-width: 375px) {
+  .current-weather, .forecast {
+    width: 90%;
+  }
+  #city-input{
+    width: 100%;
+  }
+
+  #search-button{
+    width: 100%;
+
+  }
+
+  #search-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #city-input, #search-button{
+    width: auto;
+    margin: 5%
+  }
+}
